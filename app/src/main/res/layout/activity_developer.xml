@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/developer_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:orientation="vertical"
+        tools:context=".DeveloperActivity">
+
+
+
+        <com.romainpiel.shimmer.ShimmerTextView
+
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:id="@+id/text"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold|italic"
+            android:text="টিম লিডার"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_margin="5dp"
+            android:layout_below="@+id/text"
+            android:id="@+id/sirpic"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#102167"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/mahbubsirpic"/>
+
+        <View
+            android:id="@+id/view11"
+            android:layout_below="@+id/sirpic"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+
+
+
+
+        <com.romainpiel.shimmer.ShimmerTextView
+            android:textColor="#000"
+            android:id="@+id/text1"
+            android:layout_below="@id/view11"
+            android:gravity="center"
+            android:text="@string/sir_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <com.romainpiel.shimmer.ShimmerTextView
+            android:id="@+id/text2"
+            android:textColor="#000"
+            android:layout_below="@id/text1"
+            android:gravity="center"
+
+            android:text="@string/sir_designation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <com.romainpiel.shimmer.ShimmerTextView
+            android:id="@+id/text3"
+            android:layout_below="@id/text2"
+            android:textColor="#000"
+            android:gravity="center"
+            android:text="@string/sir_dept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <View
+            android:id="@+id/view"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/top_gradient_bg"/>
+
+        <TextView
+            android:textColor="#000"
+            android:textSize="17dp"
+            android:textStyle="bold|italic"
+            android:id="@+id/text4"
+            android:layout_below="@+id/view"
+            android:gravity="center"
+            android:text="ডেভেলপারস"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:onClick="call_zihan"
+            android:id="@+id/linear_gian"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/text4"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="72dp"
+                android:src="@drawable/zihan"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#102167"
+
+                android:layout_gravity="center"
+                android:layout_height="72dp" />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"/>
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Md. Zulfikar Ali Zihan"/>
+            <TextView
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B.Sc. Engineering"/>
+            <TextView
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CSE 13th Batch"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:onClick="call_tonmoy"
+            android:id="@+id/linear_minhaz"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/text4"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="72dp"
+                android:src="@drawable/minhazpic"
+                android:layout_gravity="center"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#102167"
+
+                android:layout_height="72dp" />
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:text="Md. Minhazur Rahman"/>
+            <TextView
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B.Sc. Engineering"/>
+            <TextView
+                android:id="@+id/batch"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CSE 13th Batch"/>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view4"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/linear_minhaz"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/top_gradient_bg"/>
+        <TextView
+            android:textColor="#000"
+            android:textSize="17dp"
+            android:textStyle="bold|italic"
+            android:id="@+id/text5"
+            android:layout_below="@+id/view4"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="সার্বিক সহযোগিতায়"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/domo"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:textColor="#000"
+            android:layout_below="@+id/text5"
+            android:text="ড. মোহাম্মদ কামরুল ইসলাম (ডেপুটি রেজিস্ট্রার, পবিপ্রবি)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/noim"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/domo"
+            android:text="মোঃ নঈম কাওছার (সহকারী রেজিস্ট্রার, পবিপ্রবি)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/mahmu"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_below="@+id/noim"
+            android:text="মোঃ মাহমুদুল হাসান (কম্পিউটার প্রোগ্রামার, পবিপ্রবি)"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:id="@+id/vieww"
+            android:layout_height="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/top_gradient_bg"
+            android:layout_below="@+id/mahmu"/>
+
+        <RelativeLayout
+            android:id="@+id/suggestionLayout"
+            android:layout_below="@+id/vieww"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/suggestion_send"
+
+
+                android:layout_toLeftOf="@+id/sendButton"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+
+
+
+                <EditText
+
+                    android:id="@+id/suggestionText"
+                    android:hint="সাজেশন"
+                    android:layout_width="match_parent"
+
+
+                    android:maxLines="5"
+                    android:layout_height="wrap_content" />
+
+
+            </android.support.design.widget.TextInputLayout>
+            <ImageButton
+
+
+                android:layout_alignParentRight="true"
+                android:background="@drawable/send_button_bg"
+                android:layout_centerInParent="true"
+
+                android:id="@+id/sendButton"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+
+                android:src="@drawable/ic_send_black_24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+
+
+
+
+
+        <TextView
+            android:layout_below="@+id/suggestionLayout"
+
+            android:textColor="#000"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/suggestions"
+
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

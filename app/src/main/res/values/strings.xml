@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">পবিপ্রবি ডায়েরি ২০১৯</string>
+    <string name="title_activity_main">পবিপ্রবি ডায়েরি ২০১৯</string>
+    <string name="tab_text_1">অনুষদ</string>
+    <string name="tab_text_2">প্রশাসন</string>
+    <string name="tab_text_3">সেবাসমুহ</string>
+    <string name="tab_text_4">সাজেশন</string>
+    <string name="sir_name">মোঃ মাহবুবুর রহমান</string>
+    <string name="sir_designation">প্রভাষক</string>
+    <string name="sir_dept">কম্পিউটার সায়েন্স এন্ড ইনফরমেশন টেকনোলজি বিভাগ</string>
+    <string name="gian_name"></string>
+    <string name="minhaz_name"></string>
+    <string name="degree"></string>
+    <string name="cse_batch"></string>
+    <string name="suggestions">পবিপ্রবি ডায়েরি এপ্লিকেশনের এটি একটি বেটা ভার্সন।এই এপ্লিকেশনের সকল তথ্য টাইপ করে নেয়া হয়েছে। তাই কিছু তথ্য ভুল বা নাও থাকতে পারে।এই বিষয়ে সাজেশনের মাধ্যমে জানালে তা পরবর্তী আপডেটে পরিবর্তন কিংবা সংযোজন করা হবে।</string>
+    <string name="action_settings">ডেভেলপার</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

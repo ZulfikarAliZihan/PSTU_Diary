@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f4f4f4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:clipToPadding="false">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/vc"
+
+
+            android:onClick="VC"
+            app:cardElevation="16dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="160dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:layout_height="wrap_content"
+                    android:text="ড.মোঃ হারুনর রশীদ"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#102167"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:text="ভাইস-চ্যান্সেলর"
+                    android:layout_margin="5dp"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/provc"
+
+            android:onClick="ProVC"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardElevation="16dp"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:text="মোহাম্মদ আলী"
+                    android:layout_margin="5dp"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#102167"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:text="প্রো-ভাইস চ্যান্সেলর"
+                    android:layout_margin="5dp"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="match_parent">
+    <Button
+        android:onClick="RegisterList"
+        android:textColor="#102167"
+        android:textSize="18sp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_bg"
+        android:text="রেজিস্ট্রার কার্যালয়"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_width="match_parent"
+
+
+        android:elevation="10dp"
+        android:layout_height="80dp" />
+
+        <Button
+            android:layout_weight="1"
+            android:onClick="DeanList"
+            android:textColor="#102167"
+            android:textSize="18sp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="ডিন অফিস"
+            android:background="@drawable/button_bg"
+            android:elevation="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="match_parent">
+    <Button
+        android:layout_weight="1"
+        android:onClick="Plan"
+        android:textColor="#102167"
+        android:textSize="18sp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:text="পরিকল্পনা, উন্নয়ন ও ওয়ার্কস বিভাগ"
+        android:background="@drawable/button_bg"
+        android:elevation="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+        <Button
+
+            android:onClick="Finance"
+            android:layout_weight="1"
+            android:textColor="#102167"
+            android:textSize="18sp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="অর্থ ও হিসাব           বিভাগ"
+            android:background="@drawable/button_bg"
+            android:elevation="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="match_parent">
+    <Button
+
+        android:onClick="ProkousholList"
+        android:textColor="#102167"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:text="প্রকৌশল বিভাগ"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:background="@drawable/button_bg"
+        android:elevation="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <Button
+
+        android:onClick="PorikkhaList"
+        android:textColor="#102167"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:text="পরীক্ষা নিয়ন্ত্রক"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:background="@drawable/button_bg"
+        android:elevation="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="match_parent">
+    <Button
+
+        android:onClick="LibraryList"
+        android:layout_weight="1"
+        android:textColor="#102167"
+        android:textSize="18sp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:text="কেন্দ্রীয় গ্রন্থাগার"
+        android:background="@drawable/button_bg"
+        android:elevation="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="9dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:elevation="10dp"
+            android:onClick="ICTList"
+            android:text="আইসিটি সেল"
+            android:textColor="#102167"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginBottom="20dp"
+        android:layout_height="match_parent">
+    <Button
+android:layout_weight="1"
+        android:onClick="ResearchList"
+        android:textColor="#102167"
+        android:textSize="18sp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:text="কেন্দ্রীয় গবেষণাগার"
+        android:background="@drawable/button_bg"
+        android:elevation="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="9dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:elevation="10dp"
+            android:onClick="KrishiList"
+            android:text="কৃষি খামার"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textColor="#102167"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>
